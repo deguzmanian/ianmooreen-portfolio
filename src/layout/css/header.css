@@ -1,0 +1,80 @@
+.header {
+    width: 100%;
+    padding: 0 10px;
+    line-height: 0;
+    border-bottom: 1px solid #EEE;
+}
+.header .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 0 auto;
+}
+.header .wrapper a {
+    text-decoration: none;
+}
+.header .wrapper a span {
+    color: #000;
+}
+#email-info {
+    margin: 0 20px;
+}
+#contact-info a,
+#email-info a {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#contact-info a span,
+#email-info a span {
+    text-transform: none;
+    font-weight: 400;
+}
+#download-cv {
+    flex-basis: 240px;
+}
+#download-cv .buttons {
+    color: #fff;
+    font-weight: 500;
+    max-width: 240px;
+}
+
+/* buttons */
+.buttons {
+    position: relative;
+    padding: 10px 25px;
+    border: none;
+    background: #337f2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    max-width: 200px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.buttons::after {
+    content: "";
+    background: #acd0aa;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s linear;
+    transform: scaleX(0);
+}
+.buttons:hover::after {
+    transform: scaleY(1);
+}
+.buttons:hover::before {
+    content: "";
+    background: #337f2a;
+    position: absolute;
+    width: 180px;
+    height: 5px;
+    margin: 0 auto;
+    bottom: 0;
+}

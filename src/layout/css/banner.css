@@ -1,0 +1,24 @@
+.banner {
+    padding: 20px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation {
+    width: 100%;
+    max-width: 800px;
+}
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.navigation ul li {
+    position: relative;
+    z-index: 1;
+}
+.navigation ul li a {
+    text-decoration: none;
+}
